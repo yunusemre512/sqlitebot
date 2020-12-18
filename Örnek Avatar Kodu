@@ -1,0 +1,21 @@
+const Discord = require("discord.js")
+
+
+module.exports = {
+kodadı: "avatar",
+alternatifleri: "pp",
+kullanım: "!avatar @kullanıcı",
+açıklama: "Kodun Açıklaması"
+
+}
+
+async run(SqliteBOT, message, args) {
+let user = message.mentions.members.first() || message.author
+
+let embed = new Discord.MessageEmbed()
+.setTitle("Avatarın Aşşağıda!")
+.setImage(user.avatarURL({dynamic: true, format: 'png', size: 1024}) )
+.setColor("GREEN")
+
+message.channel.send(embed)
+}
