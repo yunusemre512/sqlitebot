@@ -1,2 +1,3 @@
-# sqlitebot
-Sqlite Bot Tüm Hakları Gizlidir
+# Sqlite Bot
+Tüm Hakları Gizlidir
+Yasaktır
